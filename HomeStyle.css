@@ -590,18 +590,32 @@ footer {
     text-align: center;
 }
 
-.footer-content h3 {
+.logo-name {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 20%;
+    gap: 5%;
+}
+.logo-name h3 {
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
 }
 
+.logo-name img {
+    width: 20%;
+    height: 100%;
+}
+
 .footer-content p {
     max-width: 1000px;
     margin: 10px auto;
     line-height: 28px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -653,7 +667,7 @@ Responsiveness
 */
 
 /* Phone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 301px) {
 
     /* Menu Bar */
     .icon {
@@ -761,6 +775,26 @@ Responsiveness
     .footer-content p {
         margin: 10px 20px;
     }
+    .logo-name {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 20%;
+        gap: 5%;
+    }
+    .logo-name h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    
+    .logo-name img {
+        width: 50%;
+        height: 100%;
+    }
 }
 
 /* Tablet */
@@ -863,6 +897,26 @@ Responsiveness
     /* Footer */
     .footer-content p {
         margin: 10px 20px;
+    }
+    .logo-name {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 20%;
+        gap: 5%;
+    }
+    .logo-name h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    
+    .logo-name img {
+        width: 50%;
+        height: 100%;
     }
 }
 
@@ -967,6 +1021,26 @@ Responsiveness
     .footer-content p {
         margin: 10px 20px;
     }
+    .logo-name {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 20%;
+        gap: 5%;
+    }
+    .logo-name h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    
+    .logo-name img {
+        width: 40%;
+        height: 100%;
+    }
 }
 
 /* Desktop */
@@ -1011,6 +1085,26 @@ Responsiveness
     .footer-content p {
         margin: 10px 20px;
     }
+    .logo-name {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 20%;
+        gap: 5%;
+    }
+    .logo-name h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    
+    .logo-name img {
+        width: 30%;
+        height: 100%;
+    }
 }
 
 /* Big Desktop */
@@ -1054,5 +1148,25 @@ Responsiveness
     /* Footer */
     .footer-content p {
         margin: 10px 20px;
+    }
+    .logo-name {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 20%;
+        gap: 5%;
+    }
+    .logo-name h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    
+    .logo-name img {
+        width: 20%;
+        height: 100%;
     }
 }
