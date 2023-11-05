@@ -113,7 +113,7 @@ section {
 
 /* Home */
 .home {
-    background: rgba(0, 0, 0, 0.45) url(/Photos/home1.jpg);
+    background: rgba(0, 0, 0, 0.45) url(./Photos/home1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -200,7 +200,7 @@ section {
     grid-template-columns: repeat(2, 2fr);
     grid-gap: 5em;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5) url(/Photos/about.jpg);
+    background: rgba(0, 0, 0, 0.5) url(./Photos/about.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
