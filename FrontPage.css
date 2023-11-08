@@ -51,6 +51,7 @@ section {
 .home .content p {
     margin-bottom: 65px;
     font-size: 25px;
+    width: 60%;
 }
 .home video {
     z-index: 000;
@@ -180,6 +181,7 @@ Responsiveness
         font-size: 20px;
         margin-bottom: 40px;
         text-align: justify;
+        width: 100%;
     }
     .btn {
         display: flex;
@@ -232,6 +234,7 @@ Responsiveness
         font-size: 20px;
         margin-bottom: 40px;
         text-align: justify;
+        width: 100%;
     }
     .btn {
         display: flex;
@@ -282,6 +285,7 @@ Responsiveness
         font-size: 25px;
         margin-bottom: 40px;
         text-align: justify;
+        width: 100%;
     }
     .btn {
         display: flex;
@@ -330,6 +334,7 @@ Responsiveness
         font-size: 25px;
         margin-bottom: 40px;
         text-align: justify;
+        width: 100%;
     }
     .btn {
         display: flex;
@@ -337,7 +342,7 @@ Responsiveness
         padding: 10px 20px;
         width: 40%;
         margin-top: 20px;
-        margin-left: 0px;
+        margin: 0 30%;
     }
     .slider-navigation {
         transform: translateY(25px);
@@ -374,6 +379,7 @@ Responsiveness
         font-size: 25px;
         margin-bottom: 40px;
         text-align: justify;
+        width: 100%;
     }
     .btn {
         display: flex;
@@ -381,7 +387,7 @@ Responsiveness
         padding: 10px 20px;
         width: 30%;
         margin-top: 20px;
-        margin-left: 0px;
+        margin: 0 35%;
     }
     .slider-navigation {
         transform: translateY(45px);
@@ -418,14 +424,15 @@ Responsiveness
         font-size: 30px;
         margin-bottom: 40px;
         text-align: justify;
+        width: 100%;
     }
     .btn {
         display: flex;
         justify-content: center;
-        padding: 10px 20px;
+        padding: 15px 30px;
         width: 20%;
         margin-top: 20px;
-        margin-left: 0px;
+        margin: 0 40%;
     }
     .slider-navigation {
         transform: translateY(60px);
@@ -460,6 +467,7 @@ Responsiveness
         font-size: 25px;
         margin-bottom: 40px;
         text-align: justify;
+        text-indent: 10%;
     }
     .btn {
         display: flex;
@@ -502,6 +510,7 @@ Responsiveness
         font-size: 25px;
         margin-bottom: 40px;
         text-align: justify;
+        text-indent: 10%;
     }
     .btn {
         display: flex;
@@ -545,6 +554,7 @@ Responsiveness
         font-size: 30px;
         margin-bottom: 40px;
         text-align: justify;
+        text-indent: 10%;
     }
     .btn {
         display: flex;
