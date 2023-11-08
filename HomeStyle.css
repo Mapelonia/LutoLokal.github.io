@@ -661,6 +661,7 @@ footer {
 /* 
 Responsiveness
 */
+
 /* Small Phone */
 @media screen and (max-width: 320px) {
     /* Menu Bar */
@@ -827,6 +828,80 @@ Responsiveness
         width: 100%;
         height: 100%;
     }
+
+    /* Height */
+
+    @media screen and (max-height: 600px){
+        /* Menu */
+        .menu {
+            height: 280vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 300px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px){
+        /* Menu */
+        .menu {
+            height: 270vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 350px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        /* Menu */
+        .menu {
+            height: 240vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 300px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
+    }
 }
 
 /* Medium Phone */
@@ -933,7 +1008,7 @@ Responsiveness
     .box {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
+        gap: 2%;
 
     }
     .box .breakfast, .merienda, .panghimagas, .ulam {
@@ -994,6 +1069,80 @@ Responsiveness
     .logo-name img {
         width: 100%;
         height: 100%;
+    }
+
+    /* Height */
+
+    @media screen and (max-height: 600px){
+        /* Menu */
+        .menu {
+            height: 280vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 300px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px){
+        /* Menu */
+        .menu {
+            height: 270vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 350px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        /* Menu */
+        .menu {
+            height: 240vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 300px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
     }
 }
 
@@ -1159,6 +1308,79 @@ Responsiveness
     .logo-name img {
         width: 100%;
         height: 100%;
+    }
+
+    /* Height */
+
+    @media screen and (max-height: 600px){
+        /* Menu */
+        .menu {
+            height: 280vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 300px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px){
+        /* Menu */
+        .menu {
+            height: 280vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 300px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        /* Menu */
+        .menu {
+            height: 240vh;
+            padding: 30px 15%;
+        }
+        .menu-container {
+            width: 100%;
+            height: 250vh;
+            align-items: start;
+            margin-top: 50px;
+        }
+
+        .box .breakfast, .merienda, .panghimagas, .ulam {
+            height: 300px;
+        }
+
+        /* Team */
+        .team-body {
+            padding-top: 20px;
+            height: 100%;
+        }
     }
 }
 
