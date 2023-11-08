@@ -508,8 +508,738 @@ button:hover {
 Responsiveness
 */
 
+/* Small Phone */
+@media screen and (max-width: 320px) {
+    /* Menu Bar */
+    .icon {
+        display: inline-flex;
+    }
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+    .icon #close-icon {
+        display: none;
+    }
+    #check:checked~.icon #close-icon {
+        display: block;
+    }
+
+    /* Navbar */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(50px);
+        display: block;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.9);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    .logo-title img {
+        left: -10px;
+    }
+
+    .logo-title a{
+        font-size: 1.8rem; 
+        margin-left: 65px;
+        margin-top: 5px;
+    }
+
+    #check:checked~.navbar{
+        height: 18.5rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+
+    /* Data */
+    .data {
+        width: 60%;
+        border-radius: 3px;
+        overflow-y: auto;
+        position: absolute;
+        top: 80px;
+        right: -55px;
+    }
+
+    /* Header */
+    .header {
+        height: 70px;
+        width: 95%;
+    }
+    .header p {
+        font-size: 15px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 78%;
+        padding: 10px;
+        height: 80vh;
+        position: relative;
+        right: 45px;
+    }
+
+    /* Search Bar */
+    .meal-search-box {
+        width: 100%;
+        padding: 20px;  
+    }
+    .search-btn {
+        width: 25%;
+        left: 5px;
+        padding: 7px 5px;
+        display: none;
+    }
+    .fa-brands {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    .fa-circle {
+        font-size: 30px;
+    }
+    ::placeholder {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /* Category List */
+    .category-list {
+        position: relative;
+        top: 30px;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .category-list p {
+        font-size: 20px;
+    }
+    .category-box {
+        position: relative;
+    }
+    .category {
+        width: 80%;
+        background-color: black;
+        padding: 25px 25px;
+        margin: 20px;
+        font-size: 11px;
+    }
+
+    /* Dish Content */
+    #root {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+    }
+
+    .bottom {
+        margin-top: 20px;
+        width: 100%;
+        height: 110px;
+    }
+    .bottom h2 {
+        font-size: 15px;
+    }
+    .bottom p {
+        font-size: 18px;
+    }
+    button {
+        width: 100%;
+        position: relative;
+        padding: 7px 25px;
+    }
+
+    /* Meal Content Details */
+    .meal-details-content {
+        margin: 2.5rem;
+        padding: 0px 10px 0px 10px;
+    }
+    .meal-details {
+        width: 100%;
+        height: 100%;
+        top: 60%;
+    }
+    .nutrition-information ul {
+        left: 5%;
+    }
+
+    /* Dish */
+    .dish {
+        margin: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid #333;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #FFF0F5;
+        width: 90%;
+    }
+    .dish-img {
+        width: 100%;
+        height: 100px;
+    }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+
+        .icon {
+            position: relative;
+            right: 70px;
+        }
+        .data {
+            top: 89px;
+            height: 80vh;
+            right: -68px;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px) {
+
+        .icon {
+            position: relative;
+            right: 70px;
+        }
+        .data {
+            top: 89px;
+            height: 80vh;
+            right: -63px;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 18px 25px;
+            margin: 12px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        .icon {
+            position: relative;
+            right: 70px;
+        }
+        .data {
+            top: 89px;
+            height: 80vh;
+            right: -63px;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 20px 25px;
+            margin: 20px;
+            font-size: 12px;
+        }
+    }
+}
+
+/* Medium Phone */
+@media screen and (max-width: 375px) and (min-width: 321px){
+    /* Menu Bar */
+    .icon {
+        display: inline-flex;
+        position: relative;
+    }
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+    .icon #close-icon {
+        display: none;
+    }
+    #check:checked~.icon #close-icon {
+        display: block;
+    }
+
+    /* Navbar */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(50px);
+        display: block;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.9);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    .logo-title img {
+        left: -10px;
+    }
+
+    .logo-title a{
+        font-size: 1.8rem; 
+        margin-left: 65px;
+        margin-top: 5px;
+    }
+
+    #check:checked~.navbar{
+        height: 18.5rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+
+    /* Data */
+    .data {
+        width: 60%;
+        border-radius: 3px;
+        overflow-y: auto;
+        position: absolute;
+        top: 80px;
+        right: -65px;
+    }
+
+    /* Header */
+    .header {
+        height: 70px;
+        width: 95%;
+    }
+    .header p {
+        font-size: 15px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 70%;
+        padding: 10px;
+        height: 80vh;
+        position: relative;
+        right: 35px;
+    }
+
+    /* Search Bar */
+    .meal-search-box {
+        width: 100%;
+        padding: 20px;  
+    }
+    .search-btn {
+        width: 25%;
+        left: 5px;
+        padding: 7px 5px;
+        display: none;
+    }
+    .fa-brands {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    .fa-circle {
+        font-size: 30px;
+    }
+    ::placeholder {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /* Category List */
+    .category-list {
+        position: relative;
+        top: 30px;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .category-list p {
+        font-size: 20px;
+    }
+    .category-box {
+        position: relative;
+    }
+    .category {
+        width: 80%;
+        background-color: black;
+        padding: 25px 25px;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    /* Dish Content */
+    #root {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+    }
+
+    .bottom {
+        margin-top: 20px;
+        width: 100%;
+        height: 110px;
+    }
+    .bottom h2 {
+        font-size: 15px;
+    }
+    .bottom p {
+        font-size: 18px;
+    }
+    button {
+        width: 100%;
+        position: relative;
+        padding: 7px 25px;
+    }
+
+    /* Meal Content Details */
+    .meal-details-content {
+        margin: 2.5rem;
+        padding: 0px 10px 0px 10px;
+    }
+    .meal-details {
+        width: 100%;
+        height: 100%;
+        top: 60%;
+    }
+    .nutrition-information ul {
+        left: 5%;
+    }
+
+    /* Dish */
+    .dish {
+        margin: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid #333;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #FFF0F5;
+        width: 90%;
+    }
+    .dish-img {
+        width: 100%;
+        height: 100px;
+    }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .data {
+            top: 89px;
+            height: 80vh;
+            right: -68px;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px) {
+        .data {
+            top: 89px;
+            height: 80vh;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 11px;
+            font-size: 17px;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        .data {
+            top: 89px;
+            height: 80vh;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 15px;
+            font-size: 18px;
+        }
+    }
+}
+
+/* Large Phone */
+@media screen and (max-width: 425px) and (min-width: 376px){
+    /* Menu Bar */
+    .icon {
+        display: inline-flex;
+        position: relative;
+    }
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+    .icon #close-icon {
+        display: none;
+    }
+    #check:checked~.icon #close-icon {
+        display: block;
+    }
+
+    /* Navbar */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(50px);
+        display: block;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.9);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    .logo-title img {
+        left: -10px;
+    }
+
+    .logo-title a{
+        font-size: 1.8rem; 
+        margin-left: 65px;
+        margin-top: 5px;
+    }
+
+    #check:checked~.navbar{
+        height: 18.5rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+
+    /* Data */
+    .data {
+        width: 60%;
+        border-radius: 3px;
+        overflow-y: auto;
+        position: absolute;
+        top: 80px;
+        right: -70px;
+    }
+
+    /* Header */
+    .header {
+        height: 70px;
+        width: 95%;
+    }
+    .header p {
+        font-size: 15px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 65%;
+        padding: 10px;
+        height: 80vh;
+        position: relative;
+        right: 35px;
+    }
+
+    /* Search Bar */
+    .meal-search-box {
+        width: 100%;
+        padding: 20px;  
+    }
+    .search-btn {
+        width: 20%;
+        left: 5px;
+        padding: 7px 5px;
+    }
+    .fa-brands {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    .fa-circle {
+        font-size: 30px;
+    }
+    ::placeholder {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /* Category List */
+    .category-list {
+        position: relative;
+        top: 30px;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .category-list p {
+        font-size: 20px;
+    }
+    .category-box {
+        position: relative;
+    }
+    .category {
+        width: 80%;
+        background-color: black;
+        padding: 25px 25px;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    /* Dish Content */
+    #root {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+    }
+
+    .bottom {
+        margin-top: 20px;
+        width: 100%;
+        height: 110px;
+    }
+    .bottom h2 {
+        font-size: 15px;
+    }
+    .bottom p {
+        font-size: 18px;
+    }
+    button {
+        width: 100%;
+        position: relative;
+        padding: 7px 25px;
+    }
+
+    /* Meal Content Details */
+    .meal-details-content {
+        margin: 2.5rem;
+        padding: 0px 10px 0px 10px;
+    }
+    .meal-details {
+        width: 100%;
+        height: 100%;
+        top: 60%;
+    }
+    .nutrition-information ul {
+        left: 5%;
+    }
+
+    /* Dish */
+    .dish {
+        margin: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid #333;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #FFF0F5;
+        width: 90%;
+    }
+    .dish-img {
+        width: 100%;
+        height: 100px;
+    }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .data {
+            top: 89px;
+            height: 80vh;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px) {
+        .data {
+            top: 89px;
+            height: 80vh;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 11px;
+            font-size: 17px;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        .data {
+            top: 89px;
+            height: 80vh;
+        }
+
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 15px;
+            font-size: 18px;
+        }
+    }
+}
+
 /* Phone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 426px) {
 
     /* Menu Bar */
     .icon {
@@ -610,12 +1340,6 @@ Responsiveness
         margin: 2.5rem;
         padding: 0px 10px 0px 10px;
     }
-    /*.recipe-meal-img img {
-        position: relative;
-        top: 50%;
-        left: 85%;
-        transform: translate(-50%, -50%)
-    }*/
     .meal-details {
         width: 100%;
         height: 100%;
@@ -623,6 +1347,37 @@ Responsiveness
     }
     .nutrition-information ul {
         left: 5%;
+    }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 12px;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 20px 25px;
+            margin: 16px;
+            font-size: 17px;
+        }
     }
 }
 
@@ -681,7 +1436,7 @@ Responsiveness
         width: 50%;
         border-radius: 3px;
         top: 50px;
-        left: 25px;
+        left: 5px;
     }
 
     /* Header */
@@ -734,6 +1489,37 @@ Responsiveness
     }
     .nutrition-information ul {
         left: 5%;
+    }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 12px;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 20px 25px;
+            margin: 16px;
+            font-size: 17px;
+        }
     }
 }
 
@@ -846,6 +1632,37 @@ Responsiveness
     .nutrition-information ul {
         left: 5%;
     }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 12px;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 20px 25px;
+            margin: 16px;
+            font-size: 17px;
+        }
+    }
 }
 
 /* Desktop */
@@ -906,6 +1723,37 @@ Responsiveness
     .nutrition-information ul {
         left: 5%;
     }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 12px;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 20px 25px;
+            margin: 16px;
+            font-size: 17px;
+        }
+    }
 }
 
 /* Big Desktop */
@@ -956,52 +1804,35 @@ Responsiveness
     .nutrition-information ul {
         left: 5%;
     }
-}
 
-/* Large Desktop */
-@media screen and (max-width: 2000px) and (min-width: 1401px) {
-    /* Data */
-    .data {
-        width: 80%;
-        border-radius: 3px;
-        top: 50px;
-        left: 60px;
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 15px;
+        }
     }
 
-    /* Header */
-    .header {
-        height: 100px;
-        width: 95%;
+    @media screen and (max-height: 700px) and (min-height: 601px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 15px 25px;
+            margin: 12px;
+            font-size: 16px;
+        }
     }
 
-    /* Sidebar */
-    .sidebar {
-        width: 20%;
-        padding: 10px;
-        height: 80vh;
-    }
-
-    /* Search Bar */
-    .search-btn {
-        width: 15%;
-        padding: 10px 10px;
-    }
-    .fa-brands {
-        font-size: 30px;
-    }
-
-    /* Category Section */
-    .category-list {
-        top: 5%;
-    }
-
-    /* Dish Content */
-    #root {
-        width: 95%;
-    }
-
-    /* Meal Content Details */
-    .nutrition-information ul {
-        left: 5%;
+    @media screen and (max-height: 800px) and (min-height: 701px){
+        .category {
+            width: 80%;
+            background-color: black;
+            padding: 20px 25px;
+            margin: 16px;
+            font-size: 17px;
+        }
     }
 }
