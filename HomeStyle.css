@@ -1790,7 +1790,7 @@ Responsiveness
 }
 
 /* Desktop */
-@media screen and (max-width: 1200px) and (min-width: 993px) {
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
     /* Home */
     .home {
         padding: 70px 1%;
@@ -1850,6 +1850,33 @@ Responsiveness
     .logo-name img {
         width: 30%;
         height: 100%;
+    }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .menu {
+            min-height: 110vh;
+        }
+
+        .team-body {
+            height: 100vh;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px) {
+        .menu {
+            min-height: 105vh;
+        }
+
+        .team-body {
+            height: 100vh;
+        }
+    }
+    
+    @media screen and (max-height: 800px) and (min-height: 701px) {
+        .menu {
+            min-height: 90vh;
+        }
     }
 }
 
