@@ -451,9 +451,10 @@ input {
 
 .card .actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 .actions:hover {
@@ -1636,6 +1637,33 @@ Responsiveness
         width: 50%;
         height: 100%;
     }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .menu {
+            min-height: 180vh;
+        }
+
+        .team-body {
+            height: 100vh;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px) {
+        .menu {
+            min-height: 180vh;
+        }
+
+        .team-body {
+            height: 100vh;
+        }
+    }
+    
+    @media screen and (max-height: 800px) and (min-height: 701px) {
+        .menu {
+            min-height: 160vh;
+        }
+    }
 }
 
 /* Big Tablet */
@@ -1826,7 +1854,7 @@ Responsiveness
 }
 
 /* Big Desktop */
-@media screen and (max-width: 1400px) and (min-width: 1201px) {
+@media screen and (max-width: 1440px) and (min-width: 1201px) {
     /* Home */
     .home {
         padding: 70px 1%;
@@ -1886,5 +1914,66 @@ Responsiveness
     .logo-name img {
         width: 20%;
         height: 100%;
+    }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .menu {
+            min-height: 110vh;
+        }
+
+        .team-body {
+            height: 100vh;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px) {
+        .menu {
+            min-height: 105vh;
+        }
+
+        .team-body {
+            height: 100vh;
+        }
+    }
+    
+    @media screen and (max-height: 800px) and (min-height: 701px) {
+        .menu {
+            min-height: 90vh;
+        }
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) and (min-width: 993px) {
+    .menu {
+        padding: 70px 0%;
+    }
+
+    /* Height */
+    @media screen and (max-height: 600px) {
+        .menu {
+            min-height: 110vh;
+        }
+
+        .team-body {
+            height: 100vh;
+        }
+    }
+
+    @media screen and (max-height: 700px) and (min-height: 601px) {
+        .menu {
+            min-height: 105vh;
+        }
+
+        .team-body {
+            height: 100vh;
+        }
+    }
+    
+    @media screen and (max-height: 800px) and (min-height: 701px) {
+        .menu {
+            min-height: 90vh;
+        }
     }
 }
