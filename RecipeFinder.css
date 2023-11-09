@@ -22,6 +22,11 @@ body {
     background: linear-gradient(135deg, #ff890c 10%, #ff8d15 100%);
     margin: 4vh;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+    
 header {
     position: fixed;
     top: 0;
