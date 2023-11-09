@@ -135,6 +135,16 @@ header::before {
     height: 85vh;
 }
 
+.data::-webkit-scrollbar {
+    width: 25px;
+}
+.data::-webkit-scrollbar-thumb {
+    background-color: rgb(65, 63, 63);
+    border-radius: 15px;
+    height: 20%;
+    border: 5px solid #ff8d15;
+}
+
 /* Search Bar */
 .meal-search-box {
     width: 100%;
@@ -307,16 +317,6 @@ button {
 }
 button:hover {
     background-color: orangered;
-}
-
-::-webkit-scrollbar {
-    width: 25px;
-}
-::-webkit-scrollbar-thumb {
-    background-color: rgb(65, 63, 63);
-    border-radius: 15px;
-    height: 20%;
-    border: 5px solid #ff8d15;
 }
 
 /* Meal Details */
