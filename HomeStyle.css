@@ -59,10 +59,10 @@ header {
 .logo-title img {
     position: relative;
     float: right;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     margin-top: 7px;
-    left: -20px;
+    left: -10px;
 }
 .logo-title a{
     color:  #f8f4e3;
@@ -119,7 +119,7 @@ section {
     background-size: cover;
     background-blend-mode: darken;
     width: 100%;
-    min-height: 80vh;
+    min-height: 85vh;
     display: grid;
     grid-gap: 1.5rem;
     align-items: center;
@@ -233,7 +233,7 @@ section {
 /* Menu Section */
 .menu {
     min-height: 85vh;
-    padding: 70px 8%;
+    padding: 40px 8%;
 }
 .heading {
     text-align: center;
@@ -1240,7 +1240,7 @@ Responsiveness
     /* Menu */
     .menu {
         height: 230vh;
-        padding: 30px 15%;
+        padding: 15px 15%;
     }
     .menu-container {
         width: 100%;
@@ -1317,7 +1317,7 @@ Responsiveness
         /* Menu */
         .menu {
             height: 280vh;
-            padding: 30px 15%;
+            padding: 15px 15%;
         }
         .menu-container {
             width: 100%;
@@ -1340,7 +1340,7 @@ Responsiveness
         /* Menu */
         .menu {
             height: 280vh;
-            padding: 30px 15%;
+            padding: 15px 15%;
         }
         .menu-container {
             width: 100%;
@@ -1364,7 +1364,7 @@ Responsiveness
         /* Menu */
         .menu {
             height: 240vh;
-            padding: 30px 15%;
+            padding: 15px 15%;
         }
         .menu-container {
             width: 100%;
@@ -1451,7 +1451,7 @@ Responsiveness
     /* Menu */
     .menu {
         height: 230vh;
-        padding: 30px 15%;
+        padding: 15px 15%;
     }
     .menu-container {
         width: 100%;
@@ -1581,7 +1581,7 @@ Responsiveness
     /* Menu */
     .menu {
         height: 130vh;
-        padding: 30px 5%;
+        padding: 15px 5%;
     }
     .menu-container {
         width: 100%;
@@ -1731,7 +1731,7 @@ Responsiveness
     /* Menu */
     .menu {
         height: 130vh;
-        padding: 30px 5%;
+        padding: 15px 5%;
     }
     .menu-container {
         width: 100%;
@@ -1809,7 +1809,6 @@ Responsiveness
     /* Menu */
     .menu {
         height: 85vh;
-        padding: 70px;
     }
 
     /* About */
@@ -1900,7 +1899,6 @@ Responsiveness
     /* Menu */
     .menu {
         height: 85vh;
-        padding: 70px;
     }
 
     /* About */
@@ -1945,6 +1943,9 @@ Responsiveness
 
     /* Height */
     @media screen and (max-height: 600px) {
+        .home {
+            min-height: 90vh;
+        }
         .menu {
             min-height: 110vh;
         }
@@ -1955,6 +1956,9 @@ Responsiveness
     }
 
     @media screen and (max-height: 700px) and (min-height: 601px) {
+        .home {
+            min-height: 90vh;
+        }
         .menu {
             min-height: 105vh;
         }
@@ -1968,13 +1972,16 @@ Responsiveness
         .menu {
             min-height: 90vh;
         }
+        .home {
+            min-height: 91vh;
+        }
     }
 }
 
 /* Laptop */
 @media screen and (max-width: 1024px) and (min-width: 993px) {
     .menu {
-        padding: 70px 0%;
+        padding: 15px 0%;
     }
 
     /* Height */

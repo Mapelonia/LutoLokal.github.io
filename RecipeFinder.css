@@ -50,10 +50,10 @@ header::before {
 .logo-title img {
     position: relative;
     float: right;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     margin-top: 7px;
-    left: -20px;
+    left: -10px;
 }
 .logo-title a{
     color:  #f8f4e3;
@@ -92,6 +92,7 @@ header::before {
     font-weight: 500;
     font-weight: bolder;
     letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
 }
 .navbar a:hover {
     color: #e86a33;
